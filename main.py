@@ -16,3 +16,4 @@ for i in range(len(students)-1):
     if s[4] == "None":
         s[4] = -1
     xd[i].score = s[4]
+    print(xd[i].score)
