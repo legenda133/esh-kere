@@ -13,7 +13,11 @@ for i in range(len(students)-1):
     xd[i].name = s[1]
     xd[i].tidd = s[2]
     xd[i].clas = s[3]
+    xd[i].score = s[4]
     if s[4] == "None":
         s[4] = -1
-    xd[i].score = s[4]
-    print(xd[i].score)
+
+    if 'Хадаров Владимир' in xd[i].name:
+         print('Ты получил:', xd[i].score,'за проект -', xd[i].tidd)
+    else:
+        continue
