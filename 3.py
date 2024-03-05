@@ -19,8 +19,12 @@ for i in range(len(students)-1):
 for i in range(len(students)):
     x = input()
     while x != 'СТОП':
-        d=int(x)
-        print('Проект №:', (d),'делал:', xd[d+1].name, 'он(а) получил(а) оценку -', xd[d+1].score)
-        x=input()
+        if int(x) > 500:
+            print('Ничего не найдено')
+            break
+        else:
+            d=int(x)
+            print('Проект №', (d),'делал:', xd[d+1].name, 'он(а) получил(а) оценку -', xd[d+1].score)
+            x=input()
     if x=='СТОП':
         break
